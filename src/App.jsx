@@ -5,18 +5,26 @@ import { ComParametro } from './components/basicos/ComParametro'
 import { Card } from "./components/Card"
 import { Repeticao } from "./components/basicos/Repetição"
 import { Condicional } from "./components/basicos/Condicional"
+import { Pai } from "./components/comunicacao/direta/Pai"
+import { Super } from "./components/comunicacao/indireta/Super"
 
 export default function App() {
     return (
         <div className="App">
             <div className="cards-container">
-                <Card title="Primeiro Componente - Componente">
-                    <Primeiro />
+                <Card title="#07 - Comunicação Indireta(Filho->Pai)">
+                    <Super />
                 </Card>
-                <Card title="Segundo Componente - Componente c/ Parametro">
-                    <ComParametro titulo="Passa parametro" subtitulo="Passando parametro" />
+                <Card title="#06 - Comunicação Direta(Pai->Filho)">
+                    <Pai sobrenome="Oliveira" />
                 </Card>
-                <Card title="Terceiro Componente - Componente c/ Filhos">
+                <Card title="#05 - Componente c/ Condicional">
+                    <Condicional number={2} />
+                </Card>
+                <Card title="#04 - Componente c/ Repetição">
+                    <Repeticao />
+                </Card>
+                <Card title="#03 - Componente c/ Filhos">
                     <ComFilhos>
                         <p>filho 1</p>
                         <p>filho 2</p>
@@ -25,11 +33,11 @@ export default function App() {
                         <p>filho 5</p>
                     </ComFilhos>
                 </Card>
-                <Card title="Quarto Componente - Componente c/ Repetição">
-                    <Repeticao />
+                <Card title="#02 - Componente c/ Parametro">
+                    <ComParametro titulo="Passa parametro" subtitulo="Passando parametro" />
                 </Card>
-                <Card title="Quinto Componente - Componente c/ Condicional">
-                    <Condicional number={2} />
+                <Card title="#01 - Componente">
+                    <Primeiro />
                 </Card>
             </div>
         </div>
