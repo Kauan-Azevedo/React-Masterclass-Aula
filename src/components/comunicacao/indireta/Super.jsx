@@ -4,8 +4,8 @@ import { Sub } from "./Sub"
 
 export const Super = (props) => {
 
-    const handleClick = (valor) => {
-        console.log("Ação!!!")
+    const handleClick = (valor, msg) => {
+        console.log(msg)
         console.log(valor)
     }
 
