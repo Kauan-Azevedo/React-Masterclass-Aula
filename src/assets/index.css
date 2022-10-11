@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+    --container-width: 1200px;
+
+    --primary-color: #fb8500;
+    --secondary-color: #219ebc;
+    --bg-color: #003049;
+    --text-color: #e5f5ff;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: small;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all .2s ease;
+}
+
+body a {
+    color: var(--text-color);
+}
+
+body ul {
+    list-style: none;
+}
+
+.App {
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.cards-container {
+    width: 100%;
+    min-height: 300px;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
