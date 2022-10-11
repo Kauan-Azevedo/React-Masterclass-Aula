@@ -5,8 +5,8 @@ import { ComParametro } from './components/basicos/ComParametro'
 import { Card } from "./components/Card"
 import { Repeticao } from "./components/basicos/Repetição"
 import { Condicional } from "./components/basicos/Condicional"
-import { Pai } from "./components/comunicacao/direta/Pai"
-import { Super } from "./components/comunicacao/indireta/Super"
+import { Pai } from "./components/Comunicacao/direta/Pai"
+import { Super } from "./components/Comunicacao/indireta/Super"
 
 export default function App() {
     return (
