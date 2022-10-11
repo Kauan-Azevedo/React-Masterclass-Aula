@@ -1,9 +1,14 @@
+import React from "react"
 
-export const ComParametro = ({ titulo, subtitulo }) => {
+export const ComParametro = (props) => {
+
+    // Props são somente leitura
+    // props.titulo = "Outro titulo"
+
     return (
         <div>
-            <h2>{titulo ?? "Titulo not found."}</h2>
-            <p>{subtitulo ?? "Subtitulo not found."}</p>
+            <h2>{props.titulo}</h2>
+            <p>{props.subtitulo}</p>
         </div>
     )
 }
