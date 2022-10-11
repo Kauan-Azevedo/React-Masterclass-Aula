@@ -1,11 +1,17 @@
 .card {
     width: 300px;
     min-height: 200px;
-    background-color: rgb(48, 48, 48);
+    background-color: var(--bg-color);
     color: var(--text-color);
     padding: 5px;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
+    border-radius: 7px;
+    position: relative;
+    top: 0;
+    transition: top .2s ease;
+}
+
+.card:hover {
+    top: -10px;
 }
 
 .title {
